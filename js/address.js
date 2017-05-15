@@ -71,23 +71,19 @@ new Vue({
 
         },
         addNewAddress:function(){
-          this.isAdd=true;
+            this.isAdd=true;
             this.userNameValue="";
             this.streetNameValue="";
             this.telValue="";
-
-
         },
         saveFn:function(){
-            alert(123);
             this.isAdd=false;
-            let data;
+            alert("保存成功");
+            /*let data;
             data="userName:"+this.userName+"streetName"+this.streetName+"tel"+this.tel;
             this.$http.post("data/address.json",data).then(function(){
-
-                    alert("保存成功");
-
-            })
+             alert("保存成功");
+            })*/
 
         }
 
